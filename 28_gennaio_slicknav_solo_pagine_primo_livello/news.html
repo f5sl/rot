@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Rite of Thalia</title>
+	<meta name="description" content="This is the Responsive Grid System, a quick, easy and flexible way to create a responsive web site.">
+	<meta name="keywords" content="responsive, grid, system, web design">
+
+	<meta name="author" content="www.grahamrobertsonmiller.co.uk">
+
+	<meta http-equiv="cleartype" content="on">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/html5reset.css" media="all">
+	<link rel="stylesheet" href="css/responsivegridsystem.css" media="all">
+	<link rel="stylesheet" href="css/col.css" media="all">
+	<link rel="stylesheet" href="css/8cols.css" media="all">
+	<link rel="stylesheet" href="css/7cols.css" media="all">
+	<link rel="stylesheet" href="css/slicknav.css" media="all">
+	<link rel="stylesheet" href="css/mystyle.css" media="all">
+
+	<!-- Responsive Stylesheets -->
+	<!--<link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/css/1024.css">
+	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/css/768.css">
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="/css/480.css">-->
+
+	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+	<script src="js/modernizr-2.5.3-min.js"></script>
+
+	<style type="text/css">
+
+	/*  THIS IS JUST TO GET THE GRID TO SHOW UP.  YOU DONT NEED THIS IN YOUR CODE */
+
+	#maincontent .col {
+		background: #ccc;
+		
+	}
+	</style>
+</head>
+
+
+
+<body>
+<div id="wrapper">
+	<!--intestazione-->
+	<div id="headcontainer" style ="backgroud-color:#F5F7F5;">
+		<header>
+		<div class="section group">
+
+			<!--logo-->
+			<div class="col span_4_of_8 no_bottom">
+				<div class="logo">					
+					<img src="img/logo.png"/>
+				</div>
+			</div>
+			<!--fine logo-->
+
+			<!--social e selezione lingua-->
+			<div class="col span_4_of_8 no_bottom">				
+				<div class="social">
+					<a href="#">
+						<img class ="icone_social" src="img/icons/facebook37.png" />
+					</a>
+					<a href="#">
+						<img class ="icone_social" src="img/icons/twitter37.png" />
+					</a>
+					<a href="#">
+						<img class ="icone_social" src="img/icons/google37.png" />
+					</a>
+					<a href="#">
+						<img class ="icone_social" src="img/icons/youtube37.png" />
+					</a>
+				</div>
+				<div class ="social selettori_lingua">
+					<a id ="lingua_scelta" href="contatti.html">Ita</a>
+					<a href="contatti.html">Eng</a>
+				</div>				
+			</div>
+			<!--fine social e selezione lingua-->
+
+		</div>
+		<!--barra di navigazione-->
+		<nav class="margin_top">
+			<!--sfondo nero e barra di navigazione estesa-->
+			<div class="barra_navigazione gray_wall">
+				<ul id="menu">
+				    <li><a href="home.html">Home</a></li>
+				    <li><a href="band.html">La band</a></li>
+				    <li><a href ="news.html" class ="selected">News</a></li>
+				    <li><a href ="eventi.html">Eventi </a></li>				    
+				    <li><a href ="musica.html">Musica</a></li>
+				    <li><a href ="galleria.html">Galleria</a></li>
+				    <li><a href="contatti.html">Contatti</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!--fine barra di navigazione-->
+		</nav>
+		<!--fine barra di navigazione-->
+		<!-- la barra di navigazione su dispositivi <768px sta nel maincontainer per gestire meglio lo spazio -->
+		</header>
+	</div>
+
+	<!--fine intestazione-->
+
+	<!--Corpo della pagina-->
+	<div id="maincontentcontainer">
+		<div id="maincontent">
+			
+			<!--raggruppo il contenuto in un div-->			
+			<div id ="container_menu_ridotto">
+
+			</div>
+			<!--briciole di pane per schermo piccolo-->
+			<h5 id ="bread">Home->News</h5>
+			<div class="section group">
+				
+			<!-- menu di navigazione laterale esteso -->		
+				<div id ="esteso" class ="col span_2_of_7 box_esterno no_padding_top" style="background-color:#CCCCCC;">
+					<div id="div_next" class ="non_clicca nav_locale_selected">
+						<a id ="next" class ="selected" href="">Ultime</a>
+					</div>
+					<div id="div_past"class ="non_clicca">
+						<a id ="past"class ="nav_locale" href="">Archivio</a>
+					</div>
+					
+					<div class= "section group" id ="navigazione_locale" style ="padding-top:1em;">
+
+					<!--Qui ci va quello che torna dalla richiesta fatta al server-->
+					<div class ="separatore no_top">
+					</div>
+					<ul style= "list-style: none">
+						<li>
+							<a id="tutte_le_ultime" class ="non_cliccare selected" href="">Tutte le ultime news</a>
+						</li>
+					</ul>						
+					</div>
+				</div>
+			<!-- fine menu di navigazione laterale esteso -->
+
+			<!--menu di navigazione ridotto-->
+			<!--si vede solo su risoluzioni < di 768 px-->
+				
+			
+				
+			<!--fine menu di navigazione laterale ridotto-->
+				
+			<!--Contenuto della pagina-->				
+				<div class="col span_5_of_7 box_esterno">
+					<div>
+						<h4 id = "briciole" class ="title">Tutte le ultime news </h4>
+					</div>
+					<!--Contenitore delle news-->
+					<div id ="contenitore_news">
+						<div class = "news">						
+							<p class="topic_title">Il nuovo pezzo</p>
+							<span class = "col span_2_of_8 time">
+								<em>20</em>
+								GEN 
+								2014
+							</span>
+							<p class="padding news">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+							</p>
+						</div>
+
+						<div class ="separatore_news">
+						</div>
+
+						<div class = "news">						
+							<p class="topic_title">Il pezzo di oggi</p>
+							<span class = "col span_2_of_8 time">
+								<em>14</em>
+								gen 
+								2014
+							</span>
+							<p class="padding news">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+							</p>
+						</div>
+
+						<div class ="separatore_news">
+						</div>
+						
+						<div class = "news">						
+							<p class="topic_title">Il pezzo di ieri</p>
+							<span class = "col span_2_of_8 time">
+								<em>04</em>
+								dic 
+								2013
+							</span>
+							<p class="padding news">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+							</p>
+						</div>
+					</div>
+					<!--fine contenitore delle news-->
+				</div>
+				<!--fine contenuto della pagina-->
+			</div>	
+		</div>
+	</div>
+
+	<!--fine corpo della pagina-->
+	
+	<div id="footercontainer">
+		<footer class="group">
+			<div id="smallprint">
+			Created by Alessandro Ranalli with <a href ="">Responsive grid system</a>
+			</div>
+
+		</footer>
+	</div>
+</div>
+	<!-- JavaScript at the bottom for fast page loading -->
+
+	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+	
+
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="js/selectivizr-min.js"></script>
+	<![endif]-->
+
+
+	<!-- More Scripts-->
+	<script src="js/responsivegridsystem.js"></script>
+	<script src="js/riduzione.js"></script>
+	<script src="js/navigazione_locale_news.js"></script>
+	<script defer src="js/jquery.slicknav.min.js"></script>
+	<script defer src="js/slide.js"></script>
+
+</body>
+</html>
