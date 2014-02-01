@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+
+
+	<head>
+		<meta charset="utf-8">
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Rite of Thalia</title>
+
+		<meta name="description" content="Rite of Thalia, symphonic metal music!">
+		<meta name="keywords" content="Rite of Thalia, symphonic, symphonic metal, metal, rieti, music, music rieti, rieti music, rite, thalia, rite of, piano, guitar">
+
+		<meta name="author" content="Alessandro Ranalli">
+
+		<meta http-equiv="cleartype" content="on">
+
+		<link rel="shortcut icon" href="/favicon.ico">
+
+		<!-- Responsive and mobile friendly stuff -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+		<link rel="stylesheet" href="css/html5reset.css" media="all">
+		<link rel="stylesheet" href="css/responsivegridsystem.css" media="all">
+		<!--<link rel="stylesheet" href="css/col.css" media="all">
+		<link rel="stylesheet" href="css/8cols.css" media="all">-->
+		<link rel ="stylesheet" href ="css/griglia.css" media="all">
+		<link rel="stylesheet" href="css/slicknav.css" media="all">
+		<link rel="stylesheet" href="css/mystyle.css" media="all">
+
+		<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+		<script src="js/modernizr-2.5.3-min.js"></script>
+
+
+		<style type="text/css">
+
+		/*  THIS IS JUST TO GET THE GRID TO SHOW UP.  YOU DONT NEED THIS IN YOUR CODE */
+
+		#maincontent .col {
+			background: #ccc;
+			background: rgba(204, 204, 204, 0.85);
+
+		}
+		</style>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="headcontainer" style ="backgroud-color:#F5F7F5;">
+				<header>
+					<div class="section group">
+
+						<!--logo-->
+						<div class="col span_4_of_8 no_bottom">
+							<div class="logo">					
+								<a href="home.html">
+									<img src="img/logo.png"/>
+								</a>
+							</div>
+						</div>
+						<!--fine logo-->
+
+						<!--social e selezione lingua-->
+						<div class="col span_4_of_8 no_bottom">				
+							<div class="social">
+								<a href="#">
+									<img class ="icone_social" src="img/icons/facebook37.png" />
+								</a>
+								<a href="#">
+									<img class ="icone_social" src="img/icons/twitter37.png" />
+								</a>
+								<a href="#">
+									<img class ="icone_social" src="img/icons/google37.png" />
+								</a>
+								<a href="#">
+									<img class ="icone_social" src="img/icons/youtube37.png" />
+								</a>
+							</div>
+							<div class ="social selettori_lingua">
+								<a id ="lingua_scelta" href="contatti.html">Ita</a>
+								<a href="contatti.html">Eng</a>
+							</div>				
+						</div>
+						<!--fine social e selezione lingua-->
+
+					</div>
+					<!--barra di navigazione-->
+
+					<nav class="margin_top">
+						<!--sfondo nero e barra di navigazione estesa-->
+						<div class="barra_navigazione gray_wall">
+							<ul id="menu">
+							    <li><a href="home.html" class ="selected">Home</a></li>
+							    <li><a href="band.html">La band</a></li>
+							    <li><a href ="news.html">News</a></li>
+							    <li><a href ="eventi.html">Eventi </a></li>				    
+							    <li><a href ="musica.html">Musica</a></li>
+							    <li><a href ="galleria.html">Galleria</a></li>
+							    <li><a href="contatti.html">Contatti</a></li>
+							</ul>
+						</div>
+					</nav>
+					<!--fine barra di navigazione-->
+				</header>
+			</div>
+			<div id="maincontentcontainer">
+				<div id="maincontent">
+
+					<!--contenitore del menu ridotto, quando la dimensione dello schermo scende sotto i 768px-->		
+					<div id ="container_menu_ridotto">
+
+					</div>
+					<!--briciole di pane per schermo sotto i 768px-->
+					<h5 id ="bread">Home</h5>
+					<!--raggruppo tutto il contenuto in un div-->
+					<div class="section group">
+
+						<!-- slider immagini -->
+						<div class="flexslider">
+						  	<ul class="slides">
+						    	<li>
+							      	<img src="img/ireland.png" />
+							    </li>
+							    <li>
+							      	<img src="img/panorama.png" />
+							    </li>
+							    <li>
+							      	<img src="img/panorama2.jpg" />
+							    </li>
+						  	</ul>
+						</div>
+						<!-- fine slider immagini-->
+
+					</div>
+
+					<!--news ed eventi-->
+					<div class="section group">	
+						<!--ultima news-->			
+						<div class ="col span_4_of_8 box_esterno" >								
+							<h4 class="title">Ultima news</h4>
+							<p class= "topic_title">Nuovo pezzo	</p>	
+							<span class = "col span_2_of_8 time">
+								<em>20</em>
+								gen 
+								2014
+							</span>
+							<p class="padding">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+							</p>
+						</div>
+						<!--fine ultima news-->
+						<!--prossimo evento-->
+						<div class ="col span_4_of_8 box_esterno">
+							<h4 class="title">Prossimo evento</h4>
+								<p class= "topic_title">Bonobo cafè	</p>			
+								<span class = "col span_2_of_8 time">							
+									<em>31</em>
+									FEb 2014
+								</span>
+								<p class="padding">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+								</p>
+						</div>
+						<!--fine prossimo evento-->
+					</div>
+					<!--fine news ed eventi-->
+				</div>
+			</div>
+			<!--footer-->
+			<div id="footercontainer">
+				<footer class="group">
+					<div id="smallprint">
+					Created by Alessandro Ranalli with <a href ="">Responsive grid system</a>
+					</div>
+
+				</footer>
+			</div>
+			<!--fine footer-->
+		</div>
+
+			<!-- JavaScript at the bottom for fast page loading -->
+			<script src="js/jquery-1.7.2.min.js"></script>
+
+			<!--[if (lt IE 9) & (!IEMobile)]>
+			<script src="js/selectivizr-min.js"></script>
+			<![endif]-->
+
+			<!-- More Scripts-->
+			<script src="js/jquery.flexslider-min.js"></script>
+			<script src="js/responsivegridsystem.js"></script>
+			<script defer src="js/jquery.slicknav.min.js"></script>
+			<script defer src="js/slide.js"></script>
+	</body>
+</html>

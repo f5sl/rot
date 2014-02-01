@@ -1,0 +1,92 @@
+/*  SECTIONS  ============================================================================= */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { 
+	margin-left: 0; 
+} /* all browsers except IE6 and lower */
+
+
+.span_1_of_3 {
+	width: 32.26%;
+	text-align:center;
+}
+
+.span_2_of_7 {
+  	width: 28.5%;
+}
+
+.span_5_of_7 {
+  	width: 68.7%;
+}
+.span_4_of_8 {
+	width: 48.9%;
+}
+
+.span_4_of_12 {
+	width: 32.26%; 
+	text-align:center;
+}
+
+.span_2_of_12 {
+	width: 15.33%; 
+}
+
+/*  griglia per display più piccoli di 768 px */
+
+@media only screen and (max-width: 767px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+
+	}
+	.span_1_of_3 {
+		width: 48%;
+		margin: 3% 1%;
+	}
+	.span_1_of_3:first-child,
+	.span_4_of_12:first-child { 
+		margin-left: 1%; 
+	}	
+
+	.span_2_of_7,
+	.span_5_of_7,
+	.span_4_of_8 {
+		width: 100%;
+		margin: 3% 1%; 
+	}
+
+	.span_4_of_12 {
+		width: 48%;
+		margin: 3% 1%;
+	}
+	.span_2_of_12 {
+		width: 0%; 
+	}
+}
