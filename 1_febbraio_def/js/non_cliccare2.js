@@ -55,8 +55,7 @@ $(document).ready(function(){
 
 function successo(data){     
     $('#navigazione_locale').html(data).show('fast');
-    $('#briciole').text(aux);
-     
+    $('#briciole').text(aux);     
 }
 function mostra_news(data){
 	$('#contenitore_news').html(data).show('fast');

@@ -19,7 +19,6 @@ $(document).ready(function(){
 	             dataType: 'html',
 	             success: successo
 	 	});
-
 	 	$.ajax({
 	             url: './tpl/tutte_le_ultime_news.html',
 	             type: 'GET',
@@ -51,7 +50,7 @@ $(document).ready(function(){
          });
     }
 
-
+    $(document).ready(get_last_news);
 	$('#next').on('click', get_last_news);
 	$('#past').on('click', get_news_2013);
 	$('#news_2013').on('click', get_news_2013);

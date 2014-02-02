@@ -1,10 +1,8 @@
 var aux ='';
-$(document).ready(function(){
-	
+$(document).ready(function(){	
 	$('.non_cliccare').click(function( event ) {
 		event.preventDefault();
 	});
-
 	function get_events_2013(){
 		$('#div_past').addClass('nav_locale_selected');
 		$('#div_next').removeClass('nav_locale_selected');
@@ -50,7 +48,7 @@ $(document).ready(function(){
          });
 		
 	}
-
+	$(document).ready(get_next_events);
 	$('#next').on('click', get_next_events);
 	$('#past').on('click', get_events_2013);
 	$('#eventi_2013').on('click',get_events_2013);

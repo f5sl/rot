@@ -4,12 +4,8 @@ $(document).ready(function(){
 	    animation: "slide"
 	  });
 	});
-
 		$('#menu').slicknav();
 		$(".non_clicca").click(function( event ) {
 		event.preventDefault();
-	});
-		$('#menu_2').slicknav({
-		prependTo:'#nav_locale_ridotta'
 	});
 });
